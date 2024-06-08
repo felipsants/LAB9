@@ -1,6 +1,13 @@
 #include <stdio.h>
 
+#include "func.h"
+
 int main(void) {
-    printf("Hello, World!\n");
+    int n;
+    vetor v1;
+
+    scanf("%d", &n);
+
+    ordenaVetor(n, v1);
     return 0;
 }
