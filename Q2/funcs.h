@@ -6,7 +6,7 @@
 #define FUNCS_H
 
 typedef struct {
-    int v[];
+    int *v;
 }vetor;
 
 void ordenaFuncs(int n, int m, vetor v1, vetor v2);

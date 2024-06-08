@@ -4,18 +4,22 @@
 #include "funcs.h"
 
 #include <stdio.h>
+#include <stdlib.h>
 
 void ordenaFuncs(int n, int m, vetor v1, vetor v2) {
     int tamanhoTotal = n + m;
     vetor v3;
 
+    v1.v = (int *) malloc(sizeof(int) * n);
     for(int i = 0; n > i; i++) {
         scanf("%d",&v1.v[i]);
     }
+    v2.v = (int *) malloc(sizeof(int) * m);
     for(int i = 0; m > i; i++) {
         scanf("%d",&v2.v[i]);
     }
 
+    v3.v = (int *) malloc(sizeof(int) * (n + m));
     for(int i = 0; n > i; i++) {
         v3.v[i] = v1.v[i];
     }
@@ -37,5 +41,8 @@ void ordenaFuncs(int n, int m, vetor v1, vetor v2) {
         printf("%d ",v3.v[i]);
     }
 
+    free(v1.v);
+    free(v2.v);
+    free(v3.v);
 }
 #include "funcs.h"

@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 #include "funcs.h"
 
@@ -8,5 +9,6 @@ int main(void){
     scanf("%d %d", &n,&m);
 
     ordenaFuncs(n,m,v1,v2);
+
     return 0;
 }
